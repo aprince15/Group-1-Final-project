@@ -11,6 +11,15 @@
 		35405DDF2C540FD4004FFB30 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35405DDE2C540FD4004FFB30 /* ContentView.swift */; };
 		35405DE12C540FD7004FFB30 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 35405DE02C540FD7004FFB30 /* Assets.xcassets */; };
 		35405DE42C540FD7004FFB30 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 35405DE32C540FD7004FFB30 /* Preview Assets.xcassets */; };
+		35405E2F2C593D03004FFB30 /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35405E2E2C593D03004FFB30 /* CalendarView.swift */; };
+		35405E332C593EFF004FFB30 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35405E322C593EFF004FFB30 /* Home.swift */; };
+		35405E352C593FC1004FFB30 /* CustomDatePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35405E342C593FC1004FFB30 /* CustomDatePicker.swift */; };
+		35405E372C5953F5004FFB30 /* DateValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35405E362C5953F5004FFB30 /* DateValue.swift */; };
+		3571059A2C5A733C0067A193 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 357105992C5A733C0067A193 /* Task.swift */; };
+		357105A02C5BD1070067A193 /* JournalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3571059F2C5BD1070067A193 /* JournalView.swift */; };
+		357105A42C5D0AE20067A193 /* ToDoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 357105A32C5D0AE20067A193 /* ToDoView.swift */; };
+		357105A62C5D0B0B0067A193 /* ToDoItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 357105A52C5D0B0B0067A193 /* ToDoItem.swift */; };
+		357105A82C5D0B450067A193 /* NewToDoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 357105A72C5D0B450067A193 /* NewToDoView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +28,15 @@
 		35405DDE2C540FD4004FFB30 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		35405DE02C540FD7004FFB30 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		35405DE32C540FD7004FFB30 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		35405E2E2C593D03004FFB30 /* CalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarView.swift; sourceTree = "<group>"; };
+		35405E322C593EFF004FFB30 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		35405E342C593FC1004FFB30 /* CustomDatePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomDatePicker.swift; sourceTree = "<group>"; };
+		35405E362C5953F5004FFB30 /* DateValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateValue.swift; sourceTree = "<group>"; };
+		357105992C5A733C0067A193 /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
+		3571059F2C5BD1070067A193 /* JournalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalView.swift; sourceTree = "<group>"; };
+		357105A32C5D0AE20067A193 /* ToDoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoView.swift; sourceTree = "<group>"; };
+		357105A52C5D0B0B0067A193 /* ToDoItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoItem.swift; sourceTree = "<group>"; };
+		357105A72C5D0B450067A193 /* NewToDoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewToDoView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +69,13 @@
 		35405DDB2C540FD4004FFB30 /* Group 1 Final project */ = {
 			isa = PBXGroup;
 			children = (
+				35405E312C593EC7004FFB30 /* Model */,
+				35405E302C593EB2004FFB30 /* View */,
 				35405DDC2C540FD4004FFB30 /* Group_1_Final_projectApp.swift */,
 				35405DDE2C540FD4004FFB30 /* ContentView.swift */,
+				35405E342C593FC1004FFB30 /* CustomDatePicker.swift */,
+				35405E2E2C593D03004FFB30 /* CalendarView.swift */,
+				35405DE32C540FD7004FFB30 /* Preview Assets.xcassets */,
 				35405DE02C540FD7004FFB30 /* Assets.xcassets */,
 				35405DE22C540FD7004FFB30 /* Preview Content */,
 			);
@@ -62,9 +85,29 @@
 		35405DE22C540FD7004FFB30 /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
-				35405DE32C540FD7004FFB30 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		35405E302C593EB2004FFB30 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				35405E322C593EFF004FFB30 /* Home.swift */,
+				3571059F2C5BD1070067A193 /* JournalView.swift */,
+				357105A32C5D0AE20067A193 /* ToDoView.swift */,
+				357105A72C5D0B450067A193 /* NewToDoView.swift */,
+				357105A52C5D0B0B0067A193 /* ToDoItem.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		35405E312C593EC7004FFB30 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				35405E362C5953F5004FFB30 /* DateValue.swift */,
+				357105992C5A733C0067A193 /* Task.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +180,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				357105A82C5D0B450067A193 /* NewToDoView.swift in Sources */,
+				35405E352C593FC1004FFB30 /* CustomDatePicker.swift in Sources */,
 				35405DDF2C540FD4004FFB30 /* ContentView.swift in Sources */,
+				357105A62C5D0B0B0067A193 /* ToDoItem.swift in Sources */,
+				357105A02C5BD1070067A193 /* JournalView.swift in Sources */,
 				35405DDD2C540FD4004FFB30 /* Group_1_Final_projectApp.swift in Sources */,
+				35405E372C5953F5004FFB30 /* DateValue.swift in Sources */,
+				35405E332C593EFF004FFB30 /* Home.swift in Sources */,
+				3571059A2C5A733C0067A193 /* Task.swift in Sources */,
+				357105A42C5D0AE20067A193 /* ToDoView.swift in Sources */,
+				35405E2F2C593D03004FFB30 /* CalendarView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
