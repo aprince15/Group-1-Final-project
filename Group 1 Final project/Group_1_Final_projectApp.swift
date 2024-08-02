@@ -6,13 +6,14 @@
 //
 
 import SwiftUI
-import SwiftData
+//import SwiftData
 @main
 struct Group_1_Final_projectApp: App {
     var body: some Scene {
         WindowGroup {
                 ContentView()
-               .modelContainer(for: ToDoItem.self)
+            //no modelContainer
+              // .modelContainer(for: ToDoItem.self)
             }
         }
     }

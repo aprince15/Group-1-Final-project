@@ -10,13 +10,12 @@ import SwiftData
 struct ToDoView: View {
     
     @State private var showNewTask = false
-    @Query var toDos: [ToDoItem]
-    @Environment(\.modelContext) var modelContext
+    //query and environment not in this file in source code
+    //@Query var toDos: [ToDoItem]
+    //@Environment(\.modelContext) var modelContext
     
     var body: some View {
-       ZStack{
-           Color.init(red: 253/255, green: 252/255, blue: 220/255)
-                .ignoresSafeArea()
+       
            
             VStack{
                 HStack{
@@ -41,29 +40,29 @@ struct ToDoView: View {
                 .padding()
                 Spacer()
             }// end of VStack
-        }
-        List {
-                ForEach (toDos) { toDoItem in
-                        Text(toDoItem.title)
-                }
-            
-            .onDelete(perform: deleteToDo)
-            .listStyle(.plain)
-        }
-        
-        
-        if showNewTask {
-            NewToDoView(toDoItem: ToDoItem(title: "", isImportant: false), showNewTask: $showNewTask)
-        }
-    }
     
-    func deleteToDo(at offsets: IndexSet) {
-        for offset in offsets {
-            let toDoItem = toDos[offset]
-            modelContext.delete(toDoItem)
+        //not in this file in source code
+       // List {
+                //ForEach (toDos) { toDoItem in
+                        //Text(toDoItem.title)
+              //  }
+            
+         //   .onDelete(perform: deleteToDo)
+          //  .listStyle(.plain)
         }
-    }
-}
+        
+        
+       // if showNewTask {
+            //NewToDoView(toDoItem: ToDoItem(title: "", isImportant: false), showNewTask: $showNewTask)
+            //different in source code
+        }
+    
+    
+    //not in this file in source code
+   // func deleteToDo(at offsets: IndexSet) {
+        //for offset in offsets {
+            //     let toDoItem = toDos[offset]
+         //   modelContext.delete(toDoItem)
 #Preview {
     ToDoView()
 }

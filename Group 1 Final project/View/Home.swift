@@ -8,11 +8,12 @@
 import SwiftUI
 
 struct Home: View {
-    @State var currentDate: Date = Date()
     @State private var showNewTask = false
-    
-    @State private var event = ""
+    @State var currentDate: Date = Date()
+   
 
+    @State private var event = ""
+    
     var body: some View {
         ScrollView(.vertical, showsIndicators: false) {
             VStack(spacing: 20) {

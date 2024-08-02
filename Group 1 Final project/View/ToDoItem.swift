@@ -6,13 +6,15 @@
 //
 
 import Foundation
+
+//only import foundation in this file in source code
 import SwiftData
 @Model
 class ToDoItem {
     var title: String
     var isImportant: Bool
     
-init(title: String, isImportant: Bool = false) {
+    init(title: String, isImportant: Bool = false) {
        self.title = title
        self.isImportant = isImportant
     }
